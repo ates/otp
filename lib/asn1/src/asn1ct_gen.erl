@@ -1012,7 +1012,7 @@ try_catch() ->
     ["  catch",nl,
      "    Class:Exception when Class =:= error; Class =:= exit ->",nl,
      "      case Exception of",nl,
-     "        {error,Reason}=Error ->",nl,
+     "        {error,_Reason}=Error ->",nl,
      "          Error;",nl,
      "        Reason ->",nl,
      "         {error,{asn1,Reason}}",nl,
